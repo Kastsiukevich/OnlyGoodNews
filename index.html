@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OnlyGoodNews</title>	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="logo" href="#">OnlyGoodNews</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	      	<li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Разделы</a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">IT/Технологии</a></li>
+	            <li><a class="dropdown-item" href="#">Автомобили/Транспорт</a></li>
+	            <li><a class="dropdown-item" href="#">Природа/Животные</a></li>
+	            <li><a class="dropdown-item" href="#">Космос</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" aria-current="page" href="#">Новое</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">Кабинет</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex" action="https://www.google.com/search?">
+	        <input class="form-control me-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+	        <button class="btn btn btn-outline-light" type="submit">Поиск</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<main>
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			</div>
+			<div class="carousel-inner">
+			    <div class="carousel-item active" data-bs-interval="10000">
+			    	<div>
+			        	<img src="img/server.jpg" class="d-block w-100" alt="tehnologes">
+			        </div>
+			        <div class="carousel-caption d-none d-md-block">
+			        <h1>IT И ТЕХНОЛОГИИ</h1>
+			        <p class="text_item">Любая достаточно развитая технология неотличима от волшебства</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="2000">
+			    	<div>
+			        	<img src="img/cars.jpg" class="d-block w-100" alt="cars">
+			        </div>
+			        <div class="carousel-caption d-none d-md-block">
+			        <h1>АВТОМОБИЛИ И ДРУГОЙ ТРАНСПОРТ</h1>
+			        <p class="text_item">У машин тоже есть душа</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div>
+			        	<img src="img/animals.jpg" data-bs-interval="2000" class="d-block w-100" alt="animals">
+			        </div>
+			        <div class="carousel-caption d-none d-md-block">
+			        <h1>ПРИРОДА И ЖИВОТНЫЕ</h1>
+			        <p class="text_item">Братья наши меньшие</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div>
+			        	<img src="img/cosmos.jpg" data-bs-interval="2000" class="d-block w-100" alt="cosmos">
+			        </div>
+			        <div class="carousel-caption d-none d-md-block">
+			        <h1>РАКЕТЫ И КОСМОС</h1>
+			        <p class="text_item">Маленький шаг для человека и огромный шаг для человечества</p>
+			      </div>
+			    </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			</button>
+		</div>		
+		<div class="container">
+			<a class="section" href="#">Компьютеры, телефоны и другая техника</a>
+			<div class="card-group">
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  	</div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<a class="section" href="#">Авто-мото транспорт</a>
+			<div class="card-group">
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  	</div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+			</div>
+		</div>	
+		<div class="container">
+			<a class="section" href="#">Живая природа</a>
+			<div class="card-group">
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  	</div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<a class="section" href="#">Путишествия и приключения</a>
+			<div class="card-group">
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  	</div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<a class="section" href="#">Спутники, ракеты и космос</a>
+			<div class="card-group">
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				  	</div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+				<div class="card">
+				    <img src="..." class="card-img-top" alt="...">
+				    <div class="card-body">
+				        <h5 class="card-title">Card title</h5>
+				        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</main>	
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="text-center">
+				<h3>Наши контакты:</h3>
+				<div><p>МТС:<a href="tel:+375295338945">+375295338945</a></p></div>
+				<div>
+					<p>E-mail: <a href="mailto:kastsiukevich_dzianis@mail.ru">kastsiukevich_dzianis@mail.ru</a></p>
+				</div>
+			</div>
+			<div class="text-center">
+				<h3>Мы в соц.сетях</h3>
+			</div>
+			<div class="row">
+				<div class="col">
+					<a href="https://www.facebook.com/profile.php?id=100024088748764">
+						<img src="icon/fb1.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://www.instagram.com/kastsiukevich_dzianis/saved/">
+						<img src="icon/in1.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://vk.com/dzianis_kastsiukevich">
+						<img src="icon/vk1.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://www.youtube.com/channel/UCA9UHxYK2K7WWx7suSQYieA">
+						<img src="icon/yo1.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://github.com/Kastsiukevich">
+						<img src="icon/github.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="icon/sk1.png">
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="icon/tw1.png">
+					</a>
+				</div>
+			</div>
+		</div>	
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+</html>
